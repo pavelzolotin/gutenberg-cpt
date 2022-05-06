@@ -35,11 +35,11 @@ function cpt_cpt_setup_post_type() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-games',
-        'supports' => [ 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'revisions', ],
-        'rewrite' => ['slug' => 'cpt_players'],
+        'supports' => [ 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'revisions' ],
+        'rewrite' => [ 'slug' => 'cpt_players' ],
         'show_in_rest' => true
     );
-    register_post_type('cpt_players', $args);
+    register_post_type( 'cpt_players', $args );
 }
 
-add_action('init', 'cpt_cpt_setup_post_type');
+add_action( 'init', 'cpt_cpt_setup_post_type' );
