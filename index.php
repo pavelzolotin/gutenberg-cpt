@@ -18,7 +18,7 @@ if( !defined( 'WPINC' )) {
 include_once( 'includes/post-types.php' );
 include_once( 'includes/taxonomy.php' );
 
-function gutenberg_cpt_cpt_activate() {
+function gutenberg_cpt_activate() {
     gutenberg_cpt_setup_post_type();
     gutenberg_cpt_register_taxonomy();
     flush_rewrite_rules();
