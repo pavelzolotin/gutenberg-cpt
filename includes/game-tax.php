@@ -1,6 +1,6 @@
 <?php
 
-function gutenberg_cpt_register_taxonomy() {
+function gutenberg_cpt_register_game_tax() {
     $labels = [
         'name'              => esc_html_x( 'Game', 'taxonomy general name', 'gutenberg-cpt' ),
 		'singular_name'     => esc_html_x( 'Game', 'taxonomy singular name', 'gutenberg-cpt' ),
@@ -19,9 +19,9 @@ function gutenberg_cpt_register_taxonomy() {
         'hierarchical' => true,
         'show_admin_column' => true,
         'show_in_rest' => true,
-        'rewrite' => [ 'slug' => 'game' ]
+        'rewrite' => array('slug' => 'game')
     );
-    register_taxonomy( 'cpt_game', ['cpt_players'], $args );
+    register_taxonomy('cpt_game', ['cpt_players'], $args);
 }
 
-add_action( 'init', 'gutenberg_cpt_register_taxonomy' );
+add_action('init', 'gutenberg_cpt_register_game_tax');

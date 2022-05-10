@@ -16,7 +16,7 @@ if( !defined('WPINC')) {
 }
 
 include_once('includes/post-types.php');
-include_once('includes/taxonomy.php');
+include_once('includes/game-tax.php');
 
 function gutenberg_cpt_activate() {
     gutenberg_cpt_setup_post_type();
