@@ -11,12 +11,12 @@
  * Text Domain:       gutenberg-cpt
  */
 
-if( !defined( 'WPINC' )) {
+if( !defined('WPINC')) {
     die;
 }
 
-include_once( 'includes/post-types.php' );
-include_once( 'includes/taxonomy.php' );
+include_once('includes/post-types.php');
+include_once('includes/taxonomy.php');
 
 function gutenberg_cpt_activate() {
     gutenberg_cpt_setup_post_type();
@@ -27,8 +27,8 @@ function gutenberg_cpt_activate() {
 register_activation_hook(__FILE__, 'gutenberg_cpt_activate');
 
 function gutenberg_cpt_deactivate() {
-    unregister_post_type( 'cpt_players' );
-    unregister_taxonomy( 'cpt_game' );
+    unregister_post_type('cpt_players');
+    unregister_taxonomy('cpt_game');
     flush_rewrite_rules();
 }
 
