@@ -36,7 +36,7 @@ function gutenberg_cpt_setup_post_type() {
         'has_archive' => true,
         'menu_icon' => 'dashicons-games',
         'supports' => [ 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'revisions' ],
-        'rewrite' => [ 'slug' => 'cpt_players' ],
+        'rewrite' => [ 'slug' => 'players' ],
         'show_in_rest' => true
     );
     register_post_type( 'cpt_players', $args );

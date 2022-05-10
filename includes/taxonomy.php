@@ -19,7 +19,7 @@ function gutenberg_cpt_register_taxonomy() {
         'hierarchical' => true,
         'show_admin_column' => true,
         'show_in_rest' => true,
-        'rewrite' => [ 'slug' => 'cpt_game' ]
+        'rewrite' => [ 'slug' => 'game' ]
     );
     register_taxonomy( 'cpt_game', ['cpt_players'], $args );
 }
