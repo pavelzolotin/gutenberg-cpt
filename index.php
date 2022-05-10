@@ -20,7 +20,7 @@ include_once('includes/game-tax.php');
 
 function gutenberg_cpt_activate() {
     gutenberg_cpt_setup_post_type();
-    gutenberg_cpt_register_taxonomy();
+    gutenberg_cpt_register_game_tax();
     flush_rewrite_rules();
 }
 
