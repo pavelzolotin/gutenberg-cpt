@@ -21,7 +21,7 @@ function gutenberg_cpt_register_game_tax() {
         'show_in_rest' => true,
         'rewrite' => array('slug' => 'game')
     );
-    register_taxonomy('cpt_game', ['cpt_players'], $args);
+    register_taxonomy('gutenberg_game', ['gutenberg_players'], $args);
 }
 
 add_action('init', 'gutenberg_cpt_register_game_tax');

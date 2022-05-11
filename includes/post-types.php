@@ -39,7 +39,7 @@ function gutenberg_cpt_setup_post_type() {
         'rewrite' => [ 'slug' => 'players' ],
         'show_in_rest' => true
     );
-    register_post_type( 'cpt_players', $args );
+    register_post_type( 'gutenberg_players', $args );
 }
 
 add_action( 'init', 'gutenberg_cpt_setup_post_type' );

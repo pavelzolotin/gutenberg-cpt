@@ -27,8 +27,8 @@ function gutenberg_cpt_activate() {
 register_activation_hook(__FILE__, 'gutenberg_cpt_activate');
 
 function gutenberg_cpt_deactivate() {
-    unregister_post_type('cpt_players');
-    unregister_taxonomy('cpt_game');
+    unregister_post_type('gutenberg_players');
+    unregister_taxonomy('gutenberg_game');
     flush_rewrite_rules();
 }
 
