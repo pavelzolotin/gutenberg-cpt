@@ -35,7 +35,7 @@ function gutenberg_cpt_setup_post_type() {
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-games',
-        'supports' => [ 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'revisions' ],
+        'supports' => [ 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'revisions', 'custom-fields' ],
         'rewrite' => [ 'slug' => 'players' ],
         'show_in_rest' => true
     );
